@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Advent2018._01;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace Advent2018
     {
         static void Main(string[] args)
         {
+            Challenge01.Run();
         }
     }
 }
