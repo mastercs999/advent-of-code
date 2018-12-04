@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="01\Challenge01.cs" />
+    <Compile Include="03\Challenge03.cs" />
+    <Compile Include="03\Claim.cs" />
     <Compile Include="04\Action.cs" />
     <Compile Include="04\Challenge04.cs" />
     <Compile Include="04\ActionType.cs" />
