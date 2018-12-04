@@ -20,16 +20,12 @@ namespace Advent2018._02
             int threeTimes = words.Count(x => x.GroupBy(y => y).Any(y => y.Count() == 3));
 
             Console.WriteLine(twice * threeTimes);
-            
-            // Task 2
-            words.CartesianJoin(words).Where(x => x.Item1 != x.Item2).Single(x => )
-        }
 
-        public static char? Diff(string str1, string str2)
-        {
-            bool haveId = str1.Zip(str2, (c1, c2) => c1 - c2).Count(x => x != 0) == 1;
-            if (!haveId)
-                return null;
+            // Task 2
+            (string, string) id = words.CartesianJoin(words).Where(x => String.Compare(x.Item1, x.Item2) > 0).Single(x => x.Item1.Zip(x.Item2, (c1, c2) => c1 - c2).Count(y => y != 0) == 1);
+            string common = new string(id.Item1.Zip(id.Item2, (c1, c2) => (c1: c1, c2: c2)).Where(x => x.c1 == x.c2).Select(x => x.c1).ToArray());
+
+            Console.WriteLine(common);
         }
     }
 }

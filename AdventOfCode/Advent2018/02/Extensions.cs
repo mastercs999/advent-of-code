@@ -8,9 +8,9 @@ namespace Advent2018._02
 {
     public static class Extensions
     {
-        public static IEnumerable<Tuple<T, U>> CartesianJoin<T, U>(this IEnumerable<T> first, IEnumerable<U> second)
+        public static IEnumerable<(T, U)> CartesianJoin<T, U>(this IEnumerable<T> first, IEnumerable<U> second)
         {
-            return first.SelectMany(x => second, (x, y) => Tuple.Create(x, y));
+            return first.SelectMany(x => second, (x, y) => (x, y));
         }
     }
 }
