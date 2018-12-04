@@ -13,7 +13,7 @@ namespace Advent2018._03
         public static void Run()
         {
             // Load input
-            List<Claim> claims = LoadClaims(@"c:\000-Temp\input.txt").ToList();
+            List<Claim> claims = LoadClaims(Path.Combine("03", "input")).ToList();
 
             // Calculate fabric size
             int maxWidth = claims.Max(x => x.Rectangle.Left + x.Rectangle.Width);
