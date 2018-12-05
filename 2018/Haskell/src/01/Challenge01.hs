@@ -19,7 +19,7 @@ module Challenge01 (run) where
         sumWhile :: (Num a, Ord a) => [a] -> a -> Set a -> a
         sumWhile (x:xs) suma seen
                  | member suma seen = suma
-                 | otherwise = sumWhile xs (x + suma) (insert suma seen)
+                 | otherwise        = sumWhile xs (x + suma) (insert suma seen)
 
     -- Read lines from the source file and converts to int
     readSequence :: String -> IO [Int]
