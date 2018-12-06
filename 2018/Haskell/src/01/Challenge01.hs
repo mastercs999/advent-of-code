@@ -23,7 +23,7 @@ module Challenge01 (run) where
 
     -- Read lines from the source file and converts to int
     readSequence :: String -> IO [Int]
-    readSequence name = (map (read . removePlus)) <$> (lines <$> readFile name)
+    readSequence name = map read <$> (lines . removePlus <$> readFile name)
 
     -- Removes plus sign from the string
     removePlus :: String -> String

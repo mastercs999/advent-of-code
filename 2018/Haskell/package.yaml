@@ -19,13 +19,11 @@ dependencies:
 - base >= 4.7 && < 5
 - containers
 
-data-files:
-- src/01/input
-
 library:
   source-dirs: 
   - src
   - src/01
+  - src/02
 
 executables:
   advent2018-exe:
