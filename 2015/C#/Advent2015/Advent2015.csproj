@@ -50,6 +50,18 @@
     <Compile Include="03\Challenge03.cs" />
     <Compile Include="04\Challenge04.cs" />
     <Compile Include="05\Challenge05.cs" />
+    <Compile Include="06\Challenge06.cs" />
+    <Compile Include="06\Command.cs" />
+    <Compile Include="06\CommandType.cs" />
+    <Compile Include="07\Challenge07.cs" />
+    <Compile Include="07\Gates\And.cs" />
+    <Compile Include="07\Gates\LeftShift.cs" />
+    <Compile Include="07\Gates\Move.cs" />
+    <Compile Include="07\Gates\Not.cs" />
+    <Compile Include="07\Gates\Or.cs" />
+    <Compile Include="07\Gates\RightShift.cs" />
+    <Compile Include="07\Gate.cs" />
+    <Compile Include="07\Signal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -66,7 +78,14 @@
     <None Include="05\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="06\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="07\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
