@@ -1,0 +1,17 @@
+﻿using Advent2015._01;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Advent2015
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Challenge01.Run();
+        }
+    }
+}
