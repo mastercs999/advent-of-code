@@ -63,6 +63,9 @@
     <Compile Include="07\Gate.cs" />
     <Compile Include="07\Signal.cs" />
     <Compile Include="08\Challenge08.cs" />
+    <Compile Include="09\Challenge09.cs" />
+    <Compile Include="09\Extensions.cs" />
+    <Compile Include="09\Route.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -86,6 +89,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="08\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="09\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
