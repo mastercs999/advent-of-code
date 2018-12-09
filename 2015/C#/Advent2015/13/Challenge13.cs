@@ -34,7 +34,6 @@ namespace Advent2015._13
 
         public static IEnumerable<Rule> LoadRules(string path)
         {
-            //Alice would lose 2 happiness units by sitting next to Bob.
             Regex regex = new Regex(@"(\w+) would (lose|gain) (\d+) happiness units by sitting next to (\w+).");
 
             return File.ReadLines(path).Select(x =>

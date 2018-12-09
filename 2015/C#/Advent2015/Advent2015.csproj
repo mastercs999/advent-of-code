@@ -76,6 +76,9 @@
     <Compile Include="13\Challenge13.cs" />
     <Compile Include="13\Extensions.cs" />
     <Compile Include="13\Rule.cs" />
+    <Compile Include="14\Challenge14.cs" />
+    <Compile Include="14\Extensions.cs" />
+    <Compile Include="14\Reindeer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -108,6 +111,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="13\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="14\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
