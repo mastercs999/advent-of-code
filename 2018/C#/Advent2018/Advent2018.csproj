@@ -62,6 +62,8 @@
     <Compile Include="07\Elf.cs" />
     <Compile Include="08\Challenge08.cs" />
     <Compile Include="08\Node.cs" />
+    <Compile Include="09\Challenge09.cs" />
+    <Compile Include="09\Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -6,6 +6,7 @@ using Advent2018._05;
 using Advent2018._06;
 using Advent2018._07;
 using Advent2018._08;
+using Advent2018._09;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,8 @@ namespace Advent2018
             //Challenge05.Run();
             //Challenge06.Run();
             //Challenge07.Run();
-            Challenge08.Run();
+            //Challenge08.Run();
+            Challenge09.Run();
         }
     }
 }
