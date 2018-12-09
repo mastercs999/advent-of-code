@@ -21,7 +21,7 @@ namespace Advent2015._09
 
             // Find all distance paths
             List<int> distances = cities
-                .Permutation()
+                .Permutations()
                 .Select(x => x.Zip(x.Skip(1), (t1, t2) => (t1, t2)))
                 .Where(x => x.All(y => routeToDistance.ContainsKey(y)))
                 .Select(x => x.Sum(y => routeToDistance[y]))
