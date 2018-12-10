@@ -64,6 +64,9 @@
     <Compile Include="08\Node.cs" />
     <Compile Include="09\Challenge09.cs" />
     <Compile Include="09\Extensions.cs" />
+    <Compile Include="10\Challenge10.cs" />
+    <Compile Include="10\Extensions.cs" />
+    <Compile Include="10\Star.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -90,6 +93,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="08\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="10\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
