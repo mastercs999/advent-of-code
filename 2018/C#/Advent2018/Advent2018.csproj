@@ -67,6 +67,9 @@
     <Compile Include="10\Challenge10.cs" />
     <Compile Include="10\Extensions.cs" />
     <Compile Include="10\Star.cs" />
+    <Compile Include="11\Square.cs" />
+    <Compile Include="11\Challenge11.cs" />
+    <Compile Include="11\Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
