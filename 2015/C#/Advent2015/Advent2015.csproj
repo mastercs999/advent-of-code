@@ -85,6 +85,7 @@
     <Compile Include="16\Aunt.cs" />
     <Compile Include="16\Challenge16.cs" />
     <Compile Include="17\Challenge17.cs" />
+    <Compile Include="18\Challenge18.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -129,6 +130,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="17\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="18\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />

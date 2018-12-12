@@ -13,7 +13,6 @@ namespace Advent2015._17
         {
             // Containers
             int[] containers = File.ReadLines(Path.Combine("17", "input")).Select(int.Parse).ToArray();
-            //containers = new int[] { 20, 15, 10, 5, 5 };
 
             // Task 1
             List<List<int>> possibilities = Find(containers).Select(x => x.ToList()).ToList();
