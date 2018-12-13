@@ -73,6 +73,12 @@
     <Compile Include="12\Challenge12.cs" />
     <Compile Include="12\Extensions.cs" />
     <Compile Include="12\Pot.cs" />
+    <Compile Include="13\Cart.cs" />
+    <Compile Include="13\Challenge13.cs" />
+    <Compile Include="13\Direction.cs" />
+    <Compile Include="13\TrackType.cs" />
+    <Compile Include="13\Track.cs" />
+    <Compile Include="13\Turn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -105,6 +111,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="12\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="13\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
