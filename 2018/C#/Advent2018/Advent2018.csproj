@@ -69,7 +69,6 @@
     <Compile Include="10\Star.cs" />
     <Compile Include="11\Square.cs" />
     <Compile Include="11\Challenge11.cs" />
-    <Compile Include="11\Extensions.cs" />
     <Compile Include="12\Challenge12.cs" />
     <Compile Include="12\Extensions.cs" />
     <Compile Include="12\Pot.cs" />
@@ -79,6 +78,8 @@
     <Compile Include="13\TrackType.cs" />
     <Compile Include="13\Track.cs" />
     <Compile Include="13\Turn.cs" />
+    <Compile Include="14\Challenge14.cs" />
+    <Compile Include="14\Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
