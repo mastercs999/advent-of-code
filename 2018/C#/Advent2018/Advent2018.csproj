@@ -85,6 +85,9 @@
     <Compile Include="15\NodeType.cs" />
     <Compile Include="15\PathPoint.cs" />
     <Compile Include="15\Unit.cs" />
+    <Compile Include="16\Challenge16.cs" />
+    <Compile Include="16\Instruction.cs" />
+    <Compile Include="16\TestCase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -123,6 +126,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="15\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="16\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
