@@ -80,6 +80,11 @@
     <Compile Include="13\Turn.cs" />
     <Compile Include="14\Challenge14.cs" />
     <Compile Include="14\Extensions.cs" />
+    <Compile Include="15\Challenge15.cs" />
+    <Compile Include="15\Node.cs" />
+    <Compile Include="15\NodeType.cs" />
+    <Compile Include="15\PathPoint.cs" />
+    <Compile Include="15\Unit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -115,6 +120,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="13\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="15\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
