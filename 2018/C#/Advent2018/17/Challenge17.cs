@@ -116,17 +116,14 @@ namespace Advent2018._17
                 GoDown(ground, x, targetY);
                 return;
             }
-
-            // There is water
-            if (ground[targetY, x] == TileType.Water)
+            else if (ground[targetY, x] == TileType.Water)   // There is water
             {
                 if (DetectWall(ground, x, targetY, 1) && DetectWall(ground, x, targetY, -1))
                     GoUp(ground, x, targetY);
                 return;
             }
-
-            // There is clay, start filling up
-            GoUp(ground, x, y);
+            else    // There is clay, start filling up
+                GoUp(ground, x, y);
         }
         private static void MoveHorizontal(TileType[,] ground, int x, int y, int dx)
         {
@@ -136,23 +133,19 @@ namespace Advent2018._17
             if (ground[y, targetX] == TileType.Water)
                 return;
 
-            // There is clay or another water under target location
-            if (ground[y + 1, targetX] != TileType.Sand)
+            // There is sand under target location - overflow
+            if (ground[y + 1, targetX] == TileType.Sand)
             {
-                // Continue horizontal move if wall not hit
-                if (ground[y, targetX] != TileType.Clay)
-                {
-                    ground[y, targetX] = TileType.Water;
+                ground[y, targetX] = TileType.Water;
+                GoDown(ground, targetX, y);
 
-                    MoveHorizontal(ground, targetX, y, dx);
-                }
-
-                return;
             }
+            else if (ground[y, targetX] != TileType.Clay)    // There is clay or another water under target location and wall not hit - continue
+            {
+                ground[y, targetX] = TileType.Water;
 
-            // There is sand under target location
-            ground[y, targetX] = TileType.Water;
-            GoDown(ground, targetX, y);
+                MoveHorizontal(ground, targetX, y, dx);
+            }
         }
         private static void GoUp(TileType[,] ground, int x, int y)
         {
@@ -180,11 +173,10 @@ namespace Advent2018._17
 
             if (targetX < 0 || targetX >= ground.GetLength(1) || ground[y, targetX] == TileType.Sand)
                 return false;
-
-            if (ground[y, targetX] == TileType.Clay)
+            else if (ground[y, targetX] == TileType.Clay)
                 return true;
-
-            return DetectWall(ground, targetX, y, dx);
+            else
+                return DetectWall(ground, targetX, y, dx);
         }
     }
 }

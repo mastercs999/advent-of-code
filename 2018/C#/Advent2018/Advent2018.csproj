@@ -90,6 +90,9 @@
     <Compile Include="16\TestCase.cs" />
     <Compile Include="17\Challenge17.cs" />
     <Compile Include="17\TileType.cs" />
+    <Compile Include="18\Acre.cs" />
+    <Compile Include="18\Challenge18.cs" />
+    <Compile Include="18\Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,6 +137,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="17\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="18\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
