@@ -87,6 +87,7 @@
     <Compile Include="17\Challenge17.cs" />
     <Compile Include="18\Challenge18.cs" />
     <Compile Include="19\Challenge19.cs" />
+    <Compile Include="19\Extensions.cs" />
     <Compile Include="19\Rule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
