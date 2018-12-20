@@ -22,7 +22,7 @@ namespace Advent2015._19
             Console.WriteLine(distinctCount);
 
             // Task 2
-            Console.WriteLine(Reduce2(rules, "CRnFYFYFArCaF"));
+           // Console.WriteLine(Reduce2(rules, "CRnFYFYFArCaF"));
             Console.WriteLine(Reduce2(rules, molecule));
         }
 
@@ -106,39 +106,74 @@ namespace Advent2015._19
         }
 
 
+        private static HashSet<string> used = new HashSet<string>();
         private static int? Reduce2(List<Rule> rules, string molecule)
         {
-            // Sort list by lengths
-            rules = rules.OrderByDescending(x => x.To.Length - x.From.Length).ToList();
+            used.Add(molecule);
 
-            HashSet<string> examined = new HashSet<string>();
+            List<int> dists = new List<int>();
 
-            int? _reduce(string oldMolecule)
+            for (int i = 0; i < molecule.Length -1; ++i)
             {
-                examined.Add(oldMolecule);
+                string shifted = molecule.Substring(i);
+                if (dists.Any())
+                    break;
 
-                foreach (Rule rule in rules.Where(x => oldMolecule.Contains(x.To)))
+                foreach (Rule rule in rules.Where(x => shifted.StartsWith(x.To) && x.From.Length < x.To.Length).OrderByDescending(x => x.To.Length))
                 {
-                    // Do reduction
-                    int index = oldMolecule.IndexOf(rule.To);
-                    string newMolecule = oldMolecule.Substring(0, index) + rule.From + oldMolecule.Substring(index + rule.To.Length);
-                    if (examined.Contains(newMolecule))
+                    string newMolecule = molecule.Substring(0, i) + rule.From + molecule.Substring(i + rule.To.Length);
+                    if (used.Contains(newMolecule))
                         continue;
 
-                    // End
-                    if (newMolecule == "e")
-                        return 1;
+                   // Console.WriteLine(newMolecule);
 
-                    // Do more reductions
-                    int? steps = _reduce(newMolecule);
-                    if (steps.HasValue)
-                        return steps.Value + 1;
+                    int? d = Reduce2(rules, newMolecule);
+                    if (d.HasValue)
+                    {
+                        dists.Add(d.Value);
+                        break;
+                    }
                 }
-
-                return null;
             }
 
-            return _reduce(molecule);
+            if (dists.Any())
+                return dists.Min() + 1;
+            else if (molecule == "e")
+                return 0;
+            else
+                return null;
+
+            //// Sort list by lengths
+            //rules = rules.OrderByDescending(x => x.To.Length - x.From.Length).ToList();
+
+            //HashSet<string> examined = new HashSet<string>();
+
+            //int? _reduce(string oldMolecule)
+            //{
+            //    examined.Add(oldMolecule);
+
+            //    foreach (Rule rule in rules.Where(x => oldMolecule.Contains(x.To)))
+            //    {
+            //        // Do reduction
+            //        int index = oldMolecule.IndexOf(rule.To);
+            //        string newMolecule = oldMolecule.Substring(0, index) + rule.From + oldMolecule.Substring(index + rule.To.Length);
+            //        if (examined.Contains(newMolecule))
+            //            continue;
+
+            //        // End
+            //        if (newMolecule == "e")
+            //            return 1;
+
+            //        // Do more reductions
+            //        int? steps = _reduce(newMolecule);
+            //        if (steps.HasValue)
+            //            return steps.Value + 1;
+            //    }
+
+            //    return null;
+            //}
+
+            //return _reduce(molecule);
         }
     }
 }

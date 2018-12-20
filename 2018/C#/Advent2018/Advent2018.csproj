@@ -95,6 +95,7 @@
     <Compile Include="18\Extensions.cs" />
     <Compile Include="19\Challenge19.cs" />
     <Compile Include="19\Instruction.cs" />
+    <Compile Include="20\Challenge20.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -145,6 +146,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="19\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="20\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
