@@ -163,7 +163,10 @@ namespace Advent2018._15
                     if (foundPaths.TryGetValue(neighbour.Location, out PathPoint existingPathPoint))
                     {
                         if (existingPathPoint.Distance > pathPoint.Distance)
+                        {
                             foundPaths[neighbour.Location] = pathPoint;
+                            toProcess.Enqueue(pathPoint);
+                        }
                     }
                     else
                         foundPaths.Add(neighbour.Location, pathPoint);

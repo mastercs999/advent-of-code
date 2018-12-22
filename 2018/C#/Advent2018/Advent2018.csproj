@@ -98,6 +98,12 @@
     <Compile Include="20\Challenge20.cs" />
     <Compile Include="21\Challenge21.cs" />
     <Compile Include="21\Instruction.cs" />
+    <Compile Include="22\Challenge22.cs" />
+    <Compile Include="22\Extensions.cs" />
+    <Compile Include="22\Origin.cs" />
+    <Compile Include="22\PathPoint.cs" />
+    <Compile Include="22\RegionType.cs" />
+    <Compile Include="22\Tool.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -154,6 +160,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="21\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="22\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
