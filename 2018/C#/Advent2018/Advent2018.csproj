@@ -104,6 +104,9 @@
     <Compile Include="22\PathPoint.cs" />
     <Compile Include="22\RegionType.cs" />
     <Compile Include="22\Tool.cs" />
+    <Compile Include="23\Challenge23.cs" />
+    <Compile Include="23\Point.cs" />
+    <Compile Include="23\Nanobot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -163,6 +166,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="22\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="23\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
