@@ -107,6 +107,11 @@
     <Compile Include="23\Challenge23.cs" />
     <Compile Include="23\Point.cs" />
     <Compile Include="23\Nanobot.cs" />
+    <Compile Include="24\ArmyType.cs" />
+    <Compile Include="24\AttackType.cs" />
+    <Compile Include="24\Challenge24.cs" />
+    <Compile Include="24\Extensions.cs" />
+    <Compile Include="24\Group.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -169,6 +174,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="23\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="24\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
