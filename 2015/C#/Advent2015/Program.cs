@@ -18,6 +18,7 @@ using Advent2015._17;
 using Advent2015._18;
 using Advent2015._19;
 using Advent2015._20;
+using Advent2015._21;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,7 +53,8 @@ namespace Advent2015
             //Challenge17.Run();
             //Challenge18.Run();
             //Challenge19.Run();
-            Challenge20.Run();
+            //Challenge20.Run();
+            Challenge21.Run();
         }
     }
 }
