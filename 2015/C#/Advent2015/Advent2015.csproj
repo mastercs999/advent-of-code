@@ -92,6 +92,7 @@
     <Compile Include="19\Challenge19.cs" />
     <Compile Include="19\Extensions.cs" />
     <Compile Include="19\Rule.cs" />
+    <Compile Include="20\Challenge20.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
