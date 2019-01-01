@@ -96,6 +96,12 @@
     <Compile Include="21\Challenge21.cs" />
     <Compile Include="21\Character.cs" />
     <Compile Include="21\Equipment.cs" />
+    <Compile Include="22\Challenge22.cs" />
+    <Compile Include="22\Character.cs" />
+    <Compile Include="22\CharacterFactory.cs" />
+    <Compile Include="22\Spell.cs" />
+    <Compile Include="22\SpellFactory.cs" />
+    <Compile Include="22\SpellType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -149,6 +155,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="21\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="22\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
