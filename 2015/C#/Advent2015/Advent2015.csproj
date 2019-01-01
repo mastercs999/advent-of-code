@@ -102,6 +102,8 @@
     <Compile Include="22\Spell.cs" />
     <Compile Include="22\SpellFactory.cs" />
     <Compile Include="22\SpellType.cs" />
+    <Compile Include="23\Challenge23.cs" />
+    <Compile Include="23\Instruction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -158,6 +160,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="22\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="23\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
