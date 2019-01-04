@@ -108,6 +108,7 @@
     <Compile Include="23\Challenge23.cs" />
     <Compile Include="23\Instruction.cs" />
     <Compile Include="24\Challenge24.cs" />
+    <Compile Include="25\Challenge25.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -170,6 +171,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="24\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="25\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
