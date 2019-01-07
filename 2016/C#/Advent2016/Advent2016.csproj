@@ -52,6 +52,8 @@
     <Compile Include="04\Room.cs" />
     <Compile Include="05\Challenge05.cs" />
     <Compile Include="06\Challenge06.cs" />
+    <Compile Include="07\Challenge07.cs" />
+    <Compile Include="07\IP7.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,6 +71,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="06\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="07\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />

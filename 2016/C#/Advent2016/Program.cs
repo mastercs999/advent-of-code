@@ -4,6 +4,7 @@ using Advent2016._03;
 using Advent2016._04;
 using Advent2016._05;
 using Advent2016._06;
+using Advent2016._07;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,8 @@ namespace Advent2016
             //Challenge03.Run();
             //Challenge04.Run();
             //Challenge05.Run();
-            Challenge06.Run();
+            //Challenge06.Run();
+            Challenge07.Run();
         }
     }
 }
