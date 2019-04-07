@@ -59,6 +59,9 @@
     </Compile>
     <Compile Include="09\Marker.cs" />
     <Compile Include="09\Challenge09.cs" />
+    <Compile Include="10\Bot.cs" />
+    <Compile Include="10\Challenge10.cs" />
+    <Compile Include="10\OutputBin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -85,6 +88,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="09\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="10\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
