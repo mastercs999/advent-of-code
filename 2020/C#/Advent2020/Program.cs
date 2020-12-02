@@ -1,4 +1,5 @@
 ﻿using Advent2020._01;
+using Advent2020._02;
 using System;
 
 namespace Advent2020
@@ -7,7 +8,8 @@ namespace Advent2020
     {
         static void Main(string[] args)
         {
-            Challenge01.Run();
+            //Challenge01.Run();
+            Challenge02.Run();
         }
     }
 }
