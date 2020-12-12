@@ -39,7 +39,7 @@ namespace Advent2020._04
             Console.WriteLine(validPassports2);
         }
 
-        public static Dictionary<string, string>[] LoadPassports(string filePath)
+        private static Dictionary<string, string>[] LoadPassports(string filePath)
         {
             return File
                 .ReadAllText(filePath)
