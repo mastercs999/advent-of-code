@@ -14,6 +14,16 @@
     <None Remove="06\input.txt" />
     <None Remove="07\input.txt" />
     <None Remove="08\input.txt" />
+    <None Remove="09\input.txt" />
+    <None Remove="10\input.txt" />
+    <None Remove="11\input.txt" />
+    <None Remove="12\input.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="09\input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +49,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="08\input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="10\input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="11\input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="12\input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
