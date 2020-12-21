@@ -10,6 +10,7 @@ using Advent2020._09;
 using Advent2020._10;
 using Advent2020._11;
 using Advent2020._12;
+using Advent2020._13;
 using System;
 
 namespace Advent2020
@@ -29,7 +30,8 @@ namespace Advent2020
             //Challenge09.Run();
             //Challenge10.Run();
             //Challenge11.Run();
-            Challenge12.Run();
+            //Challenge12.Run();
+            Challenge13.Run();
         }
     }
 }
